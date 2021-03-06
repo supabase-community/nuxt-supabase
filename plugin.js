@@ -11,5 +11,3 @@ export default (ctx, inject) => {
   ctx.$supabase = Vue.supabase
   inject('$supabase', Vue.supabase)
 }
-
-module.exports.meta = require('./package.json')
