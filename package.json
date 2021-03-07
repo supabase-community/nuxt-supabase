@@ -1,6 +1,6 @@
 {
   "name": "nuxt-supabase",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A supa simple Nuxt Module for Supabase",
   "main": "index.js",
   "author": "Scott Robertson",
