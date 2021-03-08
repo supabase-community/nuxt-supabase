@@ -1,6 +1,6 @@
 {
   "name": "nuxt-supabase",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A supa simple Nuxt Module for Supabase",
   "main": "index.js",
   "author": "Scott Robertson",
@@ -12,6 +12,12 @@
     "vue",
     "nuxt",
     "supabase"
+  ],
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "plugin.js",
+    "index.d.ts"
   ],
   "license": "MIT",
   "bugs": {
