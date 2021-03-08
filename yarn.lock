@@ -9,10 +9,10 @@
   dependencies:
     cross-fetch "^3.0.6"
 
-"@supabase/postgrest-js@^0.24.4":
-  version "0.24.5"
-  resolved "https://registry.yarnpkg.com/@supabase/postgrest-js/-/postgrest-js-0.24.5.tgz#bfad12442bd7eef2e44d7698c08f3cd72e63f712"
-  integrity sha512-DJWynRWLIVSnEHGWsPoLd7hjVO9MekPPWHwKUX/8uJnRS+SGj61EnvC5EIB2DkmSQSO0HJHXRt90nwvnTG/YVA==
+"@supabase/postgrest-js@^0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@supabase/postgrest-js/-/postgrest-js-0.25.0.tgz#40b2590053f498de995da7a633c647855865ee4f"
+  integrity sha512-oYD/YruiUZxzzDkwSVQNmNqIDykZTp4jlG577qcpltAmKY6G3g2sFPES4Ig6Z4DYFgfyg7JleozjiaBu4ZcpqQ==
   dependencies:
     cross-fetch "^3.0.6"
 
@@ -26,23 +26,23 @@
     websocket "^1.0.31"
 
 "@supabase/supabase-js@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-1.4.2.tgz#ebd6a7459b9c401def80cff9431d1cd445cccadd"
-  integrity sha512-qczdclPR85glzKjg0ed9bnKUt0HoxFq47MTsUN5MEQ5w5uk/dpnF2MYawLR7ATgoXCokxdWWB2pdzjbBTrTpUQ==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-1.5.0.tgz#66a6c745c5ecbefae92dda954a72c6781980f995"
+  integrity sha512-YduWZPuwl1A86vBzlHUtKWTvDggqLhoDBv+tOzrjb02LUxi8/O6+gpdIdfsMGW5UNCn+W8JZsvQ4jz4l3SIAmw==
   dependencies:
     "@supabase/gotrue-js" "^1.11.2"
-    "@supabase/postgrest-js" "^0.24.4"
+    "@supabase/postgrest-js" "^0.25.0"
     "@supabase/realtime-js" "^1.0.6"
 
 "@types/node@*":
-  version "14.14.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
-  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
+  version "14.14.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.32.tgz#90c5c4a8d72bbbfe53033f122341343249183448"
+  integrity sha512-/Ctrftx/zp4m8JOujM5ZhwzlWLx22nbQJiVqz8/zE15gOeEW+uly3FSX4fGFpcfEvFzXcMCJwq9lGVWgyARXhg==
 
 "@types/websocket@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@types/websocket/-/websocket-1.0.1.tgz#039272c196c2c0e4868a0d8a1a27bbb86e9e9138"
-  integrity sha512-f5WLMpezwVxCLm1xQe/kdPpQIOmL0TXYx2O15VYfYzc7hTIdxiOoOvez+McSIw3b7z/1zGovew9YSL7+h4h7/Q==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/websocket/-/websocket-1.0.2.tgz#d2855c6a312b7da73ed16ba6781815bf30c6187a"
+  integrity sha512-B5m9aq7cbbD/5/jThEr33nUY8WEfVi6A2YKCTOvw5Ldy7mtsOkqRvGjnzy6g7iMMDsgu7xREuCzqATLDLQVKcQ==
   dependencies:
     "@types/node" "*"
 
@@ -187,10 +187,10 @@ utf-8-validate@^5.0.2:
   dependencies:
     node-gyp-build "^4.2.0"
 
-vue-supabase@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-1.0.3.tgz#8e78a1c48f66c5661c9a9785243bc19d03425911"
-  integrity sha512-DXXEIKS140wN5tD8ozCp2Dz9xvRpDZzdOYaaWLai+gYPCVmewHu/EMtJ3OUQI8yCQi+7nzWkRxntdav5iLM5yA==
+vue-supabase@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-1.0.4.tgz#fd5e57cd0f359134836b13d6155d20c175d34afc"
+  integrity sha512-M3ZEMCgnc31wssdub2FK9+2AWn01eEPUUtScXeOdVmgSFKcr42ofkWqJEpdP2NxA+zlaijyHjCfourUrH7Gf+Q==
   dependencies:
     "@supabase/supabase-js" "^1.4.2"
 
