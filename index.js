@@ -7,3 +7,5 @@ export default function (options) {
     options,
   })
 }
+
+module.exports.meta = require('./package.json')
