@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "dependencies": {
-    "vue-supabase": "^1.0.4"
+    "@supabase/supabase-js": "^1.11.13"
   }
 }
