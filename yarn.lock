@@ -164,10 +164,9 @@ utf-8-validate@^5.0.2:
   dependencies:
     node-gyp-build "^4.2.0"
 
-vue-supabase@^1.0.4:
+vue-supabase@supabase/vue-supabase#4/head:
   version "1.0.4"
-  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-1.0.4.tgz#fd5e57cd0f359134836b13d6155d20c175d34afc"
-  integrity sha512-M3ZEMCgnc31wssdub2FK9+2AWn01eEPUUtScXeOdVmgSFKcr42ofkWqJEpdP2NxA+zlaijyHjCfourUrH7Gf+Q==
+  resolved "https://codeload.github.com/supabase/vue-supabase/tar.gz/56a4dbfea226ad1050c55853abb7ef16a886b0b5"
   dependencies:
     "@supabase/supabase-js" "^1.4.2"
 
