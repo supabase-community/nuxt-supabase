@@ -5,3 +5,9 @@ declare module '@nuxt/types' {
     $supabase: SupabaseClient
   }
 }
+
+declare module 'vuex' {
+  interface Store<S> {
+    $supabase: SupabaseClient
+  }
+}
