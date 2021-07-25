@@ -53,6 +53,13 @@
   dependencies:
     "@types/node" "*"
 
+"@vue/composition-api@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.0.4.tgz#6162b3ba306a8995afdce969a66e168e6743718d"
+  integrity sha512-3OzvW8RS7/7kxE+SDXm8zSLZRy9GtCYwyLYdnGtIsqXRSt5nWkA7zu80Cw8Vg+67jglrpMdVBBy7AUXAB34ZSw==
+  dependencies:
+    tslib "^2.3.0"
+
 bufferutil@^4.0.1:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/bufferutil/-/bufferutil-4.0.3.tgz#66724b756bed23cd7c28c4d306d7994f9943cc6b"
@@ -140,6 +147,11 @@ node-gyp-build@^4.2.0:
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.2.3.tgz#ce6277f853835f718829efb47db20f3e4d9c4739"
   integrity sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg==
 
+tslib@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+
 type@^1.0.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/type/-/type-1.2.0.tgz#848dd7698dafa3e54a6c479e759c4bc3f18847a0"
@@ -164,12 +176,18 @@ utf-8-validate@^5.0.2:
   dependencies:
     node-gyp-build "^4.2.0"
 
-vue-supabase@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-1.0.6.tgz#66764ef25c30dac7767f89fc767b728f6694dd32"
-  integrity sha512-/uw3QVU+VTkM1rdg8gVbhIhatPDVGvc8TJQLQMP9rvpkeL18/Gyk0JnqNcLzZ6qWXZmMgp/E1RWxjfsg3Vbv9g==
+vue-demi@^0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.2.tgz#faa06da53887c493a695b997f4fcb4784a667990"
+  integrity sha512-J+X8Au6BhQdcej6LY4O986634hZLu55L0ewU2j8my7WIKlu8cK0dqmdUxqVHHMd/cMrKKZ9SywB/id6aLhwCtA==
+
+vue-supabase@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-2.0.0.tgz#8dc159ce1783d6297ad262c62f89a4648cc2b445"
+  integrity sha512-7KjMN4jS4QMQKCNP9R4apUf82IFVuuehqiADq+GVbD2DgP/hE6UIkc3FXA2bmOsQ90zjIoJaBjg8fE0QsiAEWw==
   dependencies:
     "@supabase/supabase-js" "^1.4.2"
+    vue-demi "^0.11.2"
 
 websocket@^1.0.34:
   version "1.0.34"
