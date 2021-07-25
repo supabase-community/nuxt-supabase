@@ -2,6 +2,8 @@
 
 A supa simple wrapper around Supabase.js to enable usage within Nuxt.
 
+This package uses [vue-supabase](https://github.com/supabase/vue-supabase).
+
 ## Install
 
 ```bash
