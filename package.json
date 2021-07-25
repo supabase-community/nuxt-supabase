@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "dependencies": {
-    "vue-supabase": "^1.0.6"
+    "@vue/composition-api": "^1.0.4",
+    "vue-supabase": "^2.0.0"
   }
 }
