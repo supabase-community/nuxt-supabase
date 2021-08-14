@@ -22,6 +22,18 @@ modules: [
   }]
 ],
 ```
+### TypeScript
+Add the package to your tsconfig.json to make typescript aware of the additional types to the the nuxt context
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxt/types",
+      "nuxt-supabase"
+    ]
+  }
+}
+```
 
 ## Usage
 
@@ -30,14 +42,15 @@ You can then use supabase within your Nuxt context, or Vue components.
 ```vue
 <script>
 export default {
-  asyncData({ $supabase }) {
+  async asyncData({ $supabase }) {
     return {
       events: await $supabase.from("events").select("*");
     }
   }
 }
 </script>
-
+```
+```vue
 <script>
 export default {
   data() {
