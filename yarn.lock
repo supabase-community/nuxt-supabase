@@ -206,10 +206,10 @@ vue-demi@^0.11.2:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.2.tgz#faa06da53887c493a695b997f4fcb4784a667990"
   integrity sha512-J+X8Au6BhQdcej6LY4O986634hZLu55L0ewU2j8my7WIKlu8cK0dqmdUxqVHHMd/cMrKKZ9SywB/id6aLhwCtA==
 
-vue-supabase@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-2.0.0.tgz#8dc159ce1783d6297ad262c62f89a4648cc2b445"
-  integrity sha512-7KjMN4jS4QMQKCNP9R4apUf82IFVuuehqiADq+GVbD2DgP/hE6UIkc3FXA2bmOsQ90zjIoJaBjg8fE0QsiAEWw==
+vue-supabase@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-2.2.1.tgz#4d1b172fc161ee308d6f3e68d37174f2ebdc0716"
+  integrity sha512-dN/jfiyDBoLetosOjSaeZeNUPQul4fchYvvUiGDElBdtIAtlMktYAtGlag8dWQau5IgkwUDCsZRiaijPpX1sgQ==
   dependencies:
     "@supabase/supabase-js" "^1.4.2"
     vue-demi "^0.11.2"
