@@ -26,7 +26,7 @@
   "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "dependencies": {
     "@vue/composition-api": "^1.0.4",
-    "vue-supabase": "git+ssh://git@github.com/sduduzog/vue-supabase.git#pin-capi-dependency"
+    "vue-supabase": "^2.2.3"
   },
   "devDependencies": {
     "eslint": "^8.1.0",

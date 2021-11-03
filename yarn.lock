@@ -804,9 +804,10 @@ vue-demi@^0.11.2:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.4.tgz#6101992fe4724cf5634018a16e953f3052e94e2a"
   integrity sha512-/3xFwzSykLW2HiiLie43a+FFgNOcokbBJ+fzvFXd0r2T8MYohqvphUyDQ8lbAwzQ3Dlcrb1c9ykifGkhSIAk6A==
 
-"vue-supabase@git+ssh://git@github.com/sduduzog/vue-supabase.git#pin-capi-dependency":
+vue-supabase@^2.2.3:
   version "2.2.3"
-  resolved "git+ssh://git@github.com/sduduzog/vue-supabase.git#ddccb4d21d53c24cf8a1b4a82ccc5ca14a896bc8"
+  resolved "https://registry.yarnpkg.com/vue-supabase/-/vue-supabase-2.2.3.tgz#ecae37bfcd58e8bc05631673ee3b1c76676f5f61"
+  integrity sha512-Cbyaj0xl20YgfKAmDgO6aW5jYfoZvjeKoyO4meIcyDHTpLhIjorBW8Mk2wLzDd8y84+vJM7Z4zlm38aquZ8HMA==
   dependencies:
     "@supabase/supabase-js" "^1.25.2"
     vue-demi "^0.11.2"
