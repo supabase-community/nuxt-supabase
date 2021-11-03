@@ -1,11 +1,11 @@
-const path = require('path')
+const path = require("path");
 
 export default function (options) {
   this.addPlugin({
-    src: path.resolve(__dirname, 'plugin.js'),
-    fileName: 'supabase.js',
+    src: path.resolve(__dirname, "plugin.js"),
+    fileName: "supabase.js",
     options,
-  })
+  });
 }
 
-module.exports.meta = require('./package.json')
+module.exports.meta = require("./package.json");
