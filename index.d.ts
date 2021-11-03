@@ -1,19 +1,31 @@
-import { SupabaseClient } from '@supabase/supabase-js'
+import {
+  SupabaseClient,
+  SupabaseClientOptions,
+  Session,
+  User,
+  useSupabase,
+  useSupabaseAuth,
+  useSupabaseStorage,
+} from "vue-supabase";
 
-declare module 'vue/types/vue' {
-  interface Vue {
-    $supabase: SupabaseClient
-  }
-}
-
-declare module '@nuxt/types' {
+declare module "@nuxt/types" {
   interface Context {
-    $supabase: SupabaseClient
+    $supabase: SupabaseClient;
   }
 }
 
-declare module 'vuex' {
-  interface Store<S> {
-    $supabase: SupabaseClient
+declare module "vuex" {
+  interface Store {
+    $supabase: SupabaseClient;
   }
 }
+
+export {
+  SupabaseClient,
+  SupabaseClientOptions,
+  Session,
+  User,
+  useSupabase,
+  useSupabaseAuth,
+  useSupabaseStorage,
+};

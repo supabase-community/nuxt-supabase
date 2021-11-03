@@ -1,6 +1,6 @@
 {
   "name": "nuxt-supabase",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A supa simple Nuxt Module for Supabase",
   "main": "index.js",
   "author": "Scott Robertson",
@@ -25,8 +25,13 @@
   },
   "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^1.21.1",
     "@vue/composition-api": "^1.0.4",
-    "vue-supabase": "^2.2.1"
+    "vue-supabase": "^2.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
   }
 }
