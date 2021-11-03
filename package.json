@@ -27,6 +27,6 @@
   "dependencies": {
     "@supabase/supabase-js": "^1.21.1",
     "@vue/composition-api": "^1.0.4",
-    "vue-supabase": "^2.2.1"
+    "vue-supabase": "git+ssh://git@github.com/sduduzog/vue-supabase.git#pin-capi-dependency"
   }
 }
