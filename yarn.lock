@@ -799,17 +799,17 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vue-demi@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.0.tgz#b202a01cdfc635443e41faea697d624caac0fa73"
-  integrity sha512-eggsbQSQEJKlvQrtrJLx4J44MIVq5+Z7QetIEh1Na+ZWLgt5Fq0qskQ1QmckTTEoFcUdn36c4K23EjtXZhws7w==
+vue-demi@^0.11.2:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.4.tgz#6101992fe4724cf5634018a16e953f3052e94e2a"
+  integrity sha512-/3xFwzSykLW2HiiLie43a+FFgNOcokbBJ+fzvFXd0r2T8MYohqvphUyDQ8lbAwzQ3Dlcrb1c9ykifGkhSIAk6A==
 
 "vue-supabase@git+ssh://git@github.com/sduduzog/vue-supabase.git#pin-capi-dependency":
   version "2.2.3"
-  resolved "git+ssh://git@github.com/sduduzog/vue-supabase.git#77ea4661da39b3943d2099f4a01342c0ecee9ab0"
+  resolved "git+ssh://git@github.com/sduduzog/vue-supabase.git#ddccb4d21d53c24cf8a1b4a82ccc5ca14a896bc8"
   dependencies:
     "@supabase/supabase-js" "^1.25.2"
-    vue-demi "^0.12.0"
+    vue-demi "^0.11.2"
 
 websocket@^1.0.34:
   version "1.0.34"
