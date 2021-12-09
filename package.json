@@ -33,6 +33,7 @@
   "dependencies": {
     "@nuxt/kit-edge": "^3.0.0-27313139.1c88580",
     "@vue/composition-api": "^1.0.4",
+    "express": "^4.17.1",
     "siroc": "^0.16.0",
     "vue-supabase": "^2.2.3"
   },
