@@ -2,28 +2,28 @@
   "name": "nuxt-supabase",
   "version": "2.2.1",
   "description": "A supa simple Nuxt Module for Supabase",
-  "main": "index.js",
   "author": "Scott Robertson",
+  "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scottrobertson/nuxt-supabase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scottrobertson/nuxt-supabase/issues"
   },
   "keywords": [
     "vue",
     "nuxt",
     "supabase"
   ],
-  "types": "index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
-    "index.js",
-    "plugin.js",
-    "index.d.ts"
+    "src/index.js",
+    "src/plugin.js",
+    "src/index.d.ts"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scottrobertson/nuxt-supabase/issues"
-  },
-  "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
   "dependencies": {
     "@vue/composition-api": "^1.0.4",
     "vue-supabase": "^2.2.3"
