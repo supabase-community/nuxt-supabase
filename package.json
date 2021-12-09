@@ -2,30 +2,37 @@
   "name": "nuxt-supabase",
   "version": "2.2.1",
   "description": "A supa simple Nuxt Module for Supabase",
-  "author": "Scott Robertson",
-  "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scottrobertson/nuxt-supabase.git"
-  },
-  "bugs": {
-    "url": "https://github.com/scottrobertson/nuxt-supabase/issues"
-  },
   "keywords": [
     "vue",
     "nuxt",
     "supabase"
   ],
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
-  "files": [
-    "src/index.js",
-    "src/plugin.js",
-    "src/index.d.ts"
-  ],
+  "homepage": "https://github.com/scottrobertson/nuxt-supabase#readme",
+  "bugs": {
+    "url": "https://github.com/scottrobertson/nuxt-supabase/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottrobertson/nuxt-supabase.git"
+  },
   "license": "MIT",
+  "author": "Scott Robertson",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.es.js"
+    },
+    "./templates/*": "./dist/templates/*",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "scripts": {
+    "build": "siroc build"
+  },
   "dependencies": {
     "@vue/composition-api": "^1.0.4",
+    "siroc": "^0.16.0",
     "vue-supabase": "^2.2.3"
   },
   "devDependencies": {
