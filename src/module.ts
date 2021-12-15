@@ -1,6 +1,8 @@
 import path from 'path'
+import {
+  SupabaseClientOptions,
+} from "vue-supabase";
 import { defineNuxtModule, addServerMiddleware, addPluginTemplate } from '@nuxt/kit-edge'
-import { SupabaseClientOptions } from "@supabase/supabase-js"
 import { authHandler } from './server'
 
 export type ModuleOptions = {
@@ -9,7 +11,7 @@ export type ModuleOptions = {
   supabaseOptions: SupabaseClientOptions
 }
 
-export default defineNuxtModule<ModuleOptions>({
+const nuxtModule = defineNuxtModule<ModuleOptions>({
   name: 'nuxt-supabase',
   configKey: 'supabase',
   setup (resolvedOptions, nuxt) {
@@ -26,5 +28,7 @@ export default defineNuxtModule<ModuleOptions>({
     })
   }
 })
+
+export default nuxtModule
 
 module.exports.meta = require("../package.json");

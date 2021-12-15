@@ -1,6 +1,6 @@
 import express from 'express'
 import { createClient } from '@supabase/supabase-js'
-import { ModuleOptions } from "./types"
+import { ModuleOptions } from './module'
 
 export const authHandler = (moduleOptions: ModuleOptions) => {
   const { supabaseKey, supabaseUrl, supabaseOptions } = moduleOptions
