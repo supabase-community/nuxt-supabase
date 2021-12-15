@@ -2,11 +2,11 @@ import {
   SupabaseClient,
   SupabaseClientOptions,
   Session,
-  User,
-  useSupabase,
-  useSupabaseAuth,
-  useSupabaseStorage,
-} from "vue-supabase";
+  AuthUser as User,
+  // useSupabase,
+  // useSupabaseAuth,
+  // useSupabaseStorage,
+} from "@supabase/supabase-js";
 
 declare module "@nuxt/types" {
   interface Context {
@@ -25,7 +25,7 @@ export {
   SupabaseClientOptions,
   Session,
   User,
-  useSupabase,
-  useSupabaseAuth,
-  useSupabaseStorage,
+  // useSupabase,
+  // useSupabaseAuth,
+  // useSupabaseStorage,
 };

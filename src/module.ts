@@ -1,7 +1,13 @@
 import path from 'path'
 import { defineNuxtModule, addServerMiddleware, addPluginTemplate } from '@nuxt/kit-edge'
+import { SupabaseClientOptions } from "@supabase/supabase-js"
 import { authHandler } from './server'
-import { ModuleOptions } from './types'
+
+export type ModuleOptions = {
+  supabaseUrl: string
+  supabaseKey: string
+  supabaseOptions: SupabaseClientOptions
+}
 
 export default defineNuxtModule<ModuleOptions>({
   name: 'nuxt-supabase',
@@ -15,7 +21,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPluginTemplate({
       src: path.resolve(__dirname, "templates/plugin.mjs"),
-      filename: 'supabase-plugin.js',
+      filename: 'supabase.js',
       options: resolvedOptions
     })
   }

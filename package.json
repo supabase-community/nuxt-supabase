@@ -19,14 +19,15 @@
   "author": "Scott Robertson",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
     },
     "./templates/*": "./dist/templates/*",
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/module.d.ts",
   "scripts": {
     "build": "siroc build"
   },
