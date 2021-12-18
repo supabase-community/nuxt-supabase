@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "strict": true,
     "target": "es2018",
     "module": "esnext",
@@ -9,7 +10,7 @@
     ],
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "declaration": false,
+    "declaration": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,

@@ -23,13 +23,15 @@
       "import": "./dist/module.mjs"
     },
     "./templates/*": "./dist/templates/*",
+    "./composables": "./dist/composables.mjs",
     "./package.json": "./package.json"
   },
   "main": "./dist/module.cjs",
   "module": "./dist/module.mjs",
   "types": "./dist/module.d.ts",
   "scripts": {
-    "build": "siroc build"
+    "build:siroc": "siroc build",
+    "build:unbuild": "unbuild"
   },
   "dependencies": {
     "@nuxt/kit-edge": "^3.0.0-27313139.1c88580",
@@ -46,6 +48,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "unbuild": "^0.6.7"
   }
 }

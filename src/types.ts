@@ -1,7 +1,8 @@
-import { SupabaseClientOptions } from "vue-supabase";
+import { SupabasePluginOptions } from "vue-supabase";
 
 export type ModuleOptions = {
-  supabaseUrl: string;
-  supabaseKey: string;
-  supabaseOptions: SupabaseClientOptions;
-};
+  auth?: {
+    onAuthStateChangeMutation?: string;
+    onAuthStateChangeAction?: string;
+  };
+} & SupabasePluginOptions;

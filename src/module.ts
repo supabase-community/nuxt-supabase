@@ -1,5 +1,4 @@
 import path from "path";
-import { SupabaseClientOptions } from "vue-supabase";
 import {
   defineNuxtModule,
   addServerMiddleware,
@@ -29,23 +28,21 @@ const nuxtModule = defineNuxtModule<ModuleOptions>({
       options: resolvedOptions,
     });
 
-    // nuxtApp.options.alias["vue-demi"] = "#imports";
+    // nuxtApp.options.build.transpile.push("vue-supabase");
 
-    // const supabaseDeps = ["vue-supabase"];
+    // const supabaseDeps = [
+    //   "@supabase/supabase-js",
+    //   "@supabase/gotrue-js",
+    //   "@supabase/realtime-js",
+    //   "@supabase/storage-js",
+    //   "@supabase/postgrest-js",
+    // ];
 
     // supabaseDeps.forEach(dep => {
     //   nuxtApp.options.build.transpile.push(dep);
     // });
   },
 });
-
-// export {
-//   useSupabase,
-//   useSupabaseAuth,
-//   useSupabaseFrom,
-//   useSupabaseStorage,
-//   useOnAuthStateChange,
-// } from "vue-supabase";
 
 export default nuxtModule;
 
