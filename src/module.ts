@@ -6,6 +6,28 @@ import {
 } from "@nuxt/kit-edge";
 import { authHandler } from "./server";
 import { ModuleOptions } from "./types";
+import { SupabaseClient } from "vue-supabase";
+
+// @ts-ignore: resolved with Nuxt
+declare module "#app" {
+  interface NuxtApp {
+    $supabase: SupabaseClient;
+  }
+}
+
+// @ts-ignore: resolved with Nuxt
+declare module "@nuxt/types" {
+  interface Context {
+    $supabase: SupabaseClient;
+  }
+}
+
+// @ts-ignore: resolved with Nuxt
+declare module "vuex" {
+  interface Store {
+    $supabase: SupabaseClient;
+  }
+}
 
 const nuxtModule = defineNuxtModule<ModuleOptions>({
   name: "nuxt-supabase",
