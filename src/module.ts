@@ -27,20 +27,6 @@ const nuxtModule = defineNuxtModule<ModuleOptions>({
       filename: "supabase.js",
       options: resolvedOptions,
     });
-
-    // nuxtApp.options.build.transpile.push("vue-supabase");
-
-    // const supabaseDeps = [
-    //   "@supabase/supabase-js",
-    //   "@supabase/gotrue-js",
-    //   "@supabase/realtime-js",
-    //   "@supabase/storage-js",
-    //   "@supabase/postgrest-js",
-    // ];
-
-    // supabaseDeps.forEach(dep => {
-    //   nuxtApp.options.build.transpile.push(dep);
-    // });
   },
 });
 
