@@ -3,7 +3,7 @@ import { createVueSupabase } from "vue-supabase";
 const supabase = createVueSupabase({
   supabaseUrl: "<%= options.supabaseUrl %>",
   supabaseKey: "<%= options.supabaseKey %>",
-  supabaseOptions: "<%= options.supabaseOptions %>",
+  supabaseOptions: JSON.parse('<%= JSON.stringify(options.supabaseOptions) %>')
 });
 
 Vue.use(supabase);
