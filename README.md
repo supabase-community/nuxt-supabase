@@ -19,6 +19,13 @@ modules: [
   ['nuxt-supabase', {
     supabaseUrl: 'YOUR_SUPABASE_URL',
     supabaseKey: 'YOUR_SUPABASE_KEY'
+    supabaseOptions: {
+      schema: 'public',
+      headers: { 'x-my-custom-header': 'my-app-name' },
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: true
+    }
   }]
 ],
 ```
