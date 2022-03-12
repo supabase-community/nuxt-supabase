@@ -31,7 +31,8 @@
   "types": "./dist/module.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "unbuild"
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@nuxt/kit-edge": "^3.0.0-27313139.1c88580",
