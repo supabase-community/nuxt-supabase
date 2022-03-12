@@ -17,15 +17,6 @@
   },
   "license": "MIT",
   "author": "Scott Robertson",
-  "exports": {
-    ".": {
-      "require": "./dist/module.cjs",
-      "import": "./dist/module.mjs"
-    },
-    "./templates/*": "./dist/templates/*",
-    "./composables": "./dist/composables.mjs",
-    "./package.json": "./package.json"
-  },
   "main": "./dist/module.cjs",
   "module": "./dist/module.mjs",
   "types": "./dist/module.d.ts",
