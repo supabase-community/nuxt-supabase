@@ -1,6 +1,6 @@
 {
   "name": "nuxt-supabase",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "A supa simple Nuxt Module for Supabase",
   "keywords": [
     "vue",
@@ -30,6 +30,7 @@
   "module": "./dist/module.mjs",
   "types": "./dist/module.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "unbuild"
   },
   "dependencies": {
