@@ -6,7 +6,7 @@ import {
 } from "@nuxt/kit";
 import { authHandler } from "./server";
 import { ModuleOptions } from "./types";
-import { SupabaseClient, Session } from "vue-supabase";
+import { SupabaseClient } from "vue-supabase";
 
 // @ts-ignore: resolved with Nuxt
 declare module "#app" {
