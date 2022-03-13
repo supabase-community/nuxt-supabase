@@ -1,57 +1,18 @@
-import path from "path";
+import nuxtModule from "./module";
 import {
-  defineNuxtModule,
-  addServerMiddleware,
-  addPluginTemplate,
-} from "@nuxt/kit";
-import { authHandler } from "./server";
-import { ModuleOptions } from "./types";
-import { SupabaseClient } from "vue-supabase";
+  SupabaseClient as _SupabaseClient,
+  SupabaseClientOptions as _SupabaseClientOptions,
+  SupabaseRealtimePayload as _SupabaseRealtimePayload,
+  Subscription as _Subscription,
+  User as _User,
+  Session as _Session,
+} from "vue-supabase";
 
-// @ts-ignore: resolved with Nuxt
-declare module "#app" {
-  interface NuxtApp {
-    $supabase: SupabaseClient;
-  }
-}
-
-// @ts-ignore: resolved with Nuxt
-declare module "@nuxt/types" {
-  interface Context {
-    $supabase: SupabaseClient;
-  }
-}
-
-// @ts-ignore: resolved with Nuxt
-declare module "vuex" {
-  interface Store {
-    $supabase: SupabaseClient;
-  }
-}
-
-const nuxtModule = defineNuxtModule<ModuleOptions>({
-  meta: {
-    name: "nuxt-supabase",
-    configKey: "supabase",
-  },
-  setup(resolvedOptions, nuxtApp) {
-    addServerMiddleware({
-      path: "/api/auth",
-      handler: authHandler(resolvedOptions),
-    });
-    addPluginTemplate({
-      src: path.resolve(__dirname, "templates/cookie.client.mjs"),
-      filename: "supabase-cookie.js",
-      options: resolvedOptions,
-    });
-    addPluginTemplate({
-      src: path.resolve(__dirname, "templates/plugin.mjs"),
-      filename: "supabase.js",
-      options: resolvedOptions,
-    });
-  },
-});
+export type SupabaseClient = _SupabaseClient;
+export type SupabaseClientOptions = _SupabaseClientOptions;
+export type SupabaseRealtimePayload = _SupabaseRealtimePayload<unknown>;
+export type Subscription = _Subscription;
+export type User = _User;
+export type Session = _Session;
 
 export default nuxtModule;
-
-module.exports.meta = require("../package.json");
