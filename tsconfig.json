@@ -6,18 +6,13 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": ".",
     "sourceMap": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "types": [
-      "node",
-      "express"
-    ],
+    "outDir": "dist",
+    "types": ["node", "express"]
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

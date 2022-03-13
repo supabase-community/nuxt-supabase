@@ -1,9 +1,9 @@
-name: Publish to NPM
+name: Publish beta to NPM
 
 on:
   workflow_dispatch:
   release:
-    types: [published]
+    types: [prereleased]
 
 jobs:
   publish-npm:
@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: npm publish
+      - run: npm publish --tag beta
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

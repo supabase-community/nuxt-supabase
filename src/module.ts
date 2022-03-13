@@ -3,7 +3,7 @@ import {
   defineNuxtModule,
   addServerMiddleware,
   addPluginTemplate,
-} from "@nuxt/kit-edge";
+} from "@nuxt/kit";
 import { authHandler } from "./server";
 import { ModuleOptions } from "./types";
 import { SupabaseClient } from "vue-supabase";
@@ -30,20 +30,20 @@ declare module "vuex" {
 }
 
 const nuxtModule = defineNuxtModule<ModuleOptions>({
-  name: "nuxt-supabase",
-  configKey: "supabase",
+  meta: {
+    name: "nuxt-supabase",
+    configKey: "supabase",
+  },
   setup(resolvedOptions, nuxtApp) {
     addServerMiddleware({
       path: "/api/auth",
       handler: authHandler(resolvedOptions),
     });
-
     addPluginTemplate({
       src: path.resolve(__dirname, "templates/cookie.client.mjs"),
       filename: "supabase-cookie.js",
       options: resolvedOptions,
     });
-
     addPluginTemplate({
       src: path.resolve(__dirname, "templates/plugin.mjs"),
       filename: "supabase.js",
