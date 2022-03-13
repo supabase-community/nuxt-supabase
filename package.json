@@ -17,24 +17,31 @@
   },
   "license": "MIT",
   "author": "Scott Robertson",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/module.cjs",
-      "import": "./dist/module.mjs"
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./composables": {
+      "require": "./dist/composables.cjs",
+      "default": "./dist/composables.mjs"
     },
     "./templates/*": "./dist/templates/*",
-    "./composables": "./dist/composables.mjs",
     "./package.json": "./package.json"
   },
-  "main": "./dist/module.cjs",
-  "module": "./dist/module.mjs",
-  "types": "./dist/module.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
     "prepack": "npm run build"
   },
   "dependencies": {
-    "@nuxt/kit-edge": "^3.0.0-27313139.1c88580",
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "@nuxt/schema": "npm:@nuxt/schema-edge@latest",
     "@vue/composition-api": "^1.0.4",
     "express": "^4.17.1",
     "vue-supabase": "^2.2.4"

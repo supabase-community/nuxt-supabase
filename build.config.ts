@@ -2,11 +2,6 @@ import { defineBuildConfig } from "unbuild";
 
 export default defineBuildConfig({
   declaration: true,
-  entries: [
-    { input: "src/module" },
-    { input: "src/composables" },
-    { input: "src/templates/", outDir: "dist/templates/", format: "esm" },
-  ],
   externals: [
     "vue",
     "@supabase/supabase-js",
