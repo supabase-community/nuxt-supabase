@@ -97,7 +97,7 @@
     unimport "0.0.8"
     untyped "^0.4.2"
 
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27451165.114cbe3", "@nuxt/schema@npm:@nuxt/schema-edge@latest":
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27451165.114cbe3":
   version "3.0.0-27451165.114cbe3"
   resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27451165.114cbe3.tgz#5acb8cec74c6dd7f93c8b46c7e6db0f582a16713"
   integrity sha512-qHnR0CpgHhj31MTiMZa3SZwmjp6bdv/Y0ggLwAjYXX9gCheePrPfYlJuz0tLHY4A2wsIbMlYOBFFikTsAWY/Mw==

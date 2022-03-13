@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-    "@nuxt/schema": "npm:@nuxt/schema-edge@latest",
     "@vue/composition-api": "^1.0.4",
     "express": "^4.17.1",
     "vue-supabase": "^2.2.4"
