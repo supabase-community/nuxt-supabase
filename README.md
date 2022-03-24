@@ -1,4 +1,8 @@
-# Nuxt + Supabase
+# Nuxt 3 + Supabase
+
+👉 https://supabase.nuxtjs.org
+
+# Nuxt 2 + Supabase
 
 A supa simple wrapper around Supabase.js to enable usage within Nuxt.
 
