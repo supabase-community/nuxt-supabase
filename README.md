@@ -1,6 +1,7 @@
 # Nuxt 3 + Supabase
 
-👉 https://supabase.nuxtjs.org
+- **Docs**: https://supabase.nuxtjs.org
+- **GitHub**: https://github.com/nuxt-community/supabase-module
 
 # Nuxt 2 + Supabase
 
