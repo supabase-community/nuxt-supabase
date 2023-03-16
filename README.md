@@ -1,7 +1,11 @@
 # Nuxt 3 + Supabase
 
+- **Changelog**: https://github.com/nuxt-community/supabase-module/blob/main/CHANGELOG.md
 - **Docs**: https://supabase.nuxtjs.org
-- **GitHub**: https://github.com/nuxt-community/supabase-module
+- **Video**: https://www.youtube.com/watch?v=jIyiRT6zT8Q
+- **GitHub**: https://github.com/nuxt-modules/supabase
+- **Demo**: https://github.com/nuxt-modules/supabase/tree/main/demo#readme
+- **Starter Template**: https://github.com/zackha/supaAuth#readme
 
 # Nuxt 2 + Supabase
 
