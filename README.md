@@ -5,7 +5,6 @@
 - **Video**: https://www.youtube.com/watch?v=jIyiRT6zT8Q
 - **GitHub**: https://github.com/nuxt-modules/supabase
 - **Demo**: https://github.com/nuxt-modules/supabase/tree/main/demo#readme
-- **Starter Template**: https://github.com/zackha/supaAuth#readme
 
 # Nuxt 2 + Supabase
 
